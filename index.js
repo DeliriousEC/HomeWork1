@@ -1,8 +1,5 @@
-let a = Number(`10`);
+let a = Number(`20`);
 alert(a);
-
-let aUp = Number(`10`)
-alert(aUp + a);
 
 let release = Number(2007);
 alert(release);
@@ -17,7 +14,8 @@ alert(b-c);
 alert(b*c);
 alert(b/c);
 
-alert(2**5);
+let result = 2;
+alert(result**5);
 
 let newA = 9;
 let newB = 2;
@@ -44,7 +42,7 @@ const user = {
 
 
 let info = prompt(`Какую информацию хотите узнать опользователе?`);
-alert(info);
+alert(user[info]);
 
 let userName = prompt(`Как тебя зовут?`);
 alert(`Привет, ${userName}!`);
