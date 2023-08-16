@@ -1,0 +1,147 @@
+@media (max-width:767px) {
+
+.center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+}
+
+
+.top {
+    height: 735px;
+    background-size: cover;
+    &__title {
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 238px;
+    }
+
+    &__subtitle {
+width: 343px;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 22px;
+margin-bottom: 0;
+    }
+
+    &__subtitle_special {
+color: #FFF;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+    }
+
+    &__button-box {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.top__button:hover {
+    transform: none;
+}
+
+.games__game:hover {
+    transform: none;
+}
+
+.seasons__button:hover {
+    transform: none;
+}
+
+.games {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 32px;
+}
+
+.games__game {
+    width: 343px;
+    height: 300px;
+}
+
+.games__game_1 {
+    width: 343px;
+    height: 300px;
+}
+
+.games__game_2 {
+    width: 343px;
+    height: 300px;
+}
+
+.games__game_3 {
+    width: 343px;
+    height: 300px;
+}
+.games__game-link {
+    width: 343px;
+    height: 300px;
+}
+
+.seasons {
+    display: flex;
+    flex-direction: column;
+}
+
+.seasons__title {
+    color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.seasons__title-box {
+    display: flex;
+    justify-content: center;
+    width: 343px;
+}
+
+.seasons__box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 51px;
+    gap: 64px;
+    padding-bottom: 85px;
+}
+
+.seasons__play-text {
+width: 343px;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 22px;
+}
+ .seasons__svg {
+    width: 344px;
+    height: 236px;
+ }   
+
+.seasons__button-box {
+width: 343px;
+display: flex;
+justify-content: center;
+
+}
+
+ }
+
