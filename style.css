@@ -227,6 +227,7 @@
     flex-wrap: nowrap;
     align-items: baseline;
     gap: 32px;
+    padding-top: 128px;
   }
   .games__game {
     width: 343px;
