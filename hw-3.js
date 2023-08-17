@@ -22,9 +22,9 @@ if (c > 0 && c <10) {
  // Задание №3
 
 let d = Number(prompt(`Введите первое число`));
-let c = Number(prompt(`Введите второе число`));
+let e = Number(prompt(`Введите второе число`));
 
- if (d > 100 || c > 100) {
+ if (d > 100 || e > 100) {
      console.log(`Верно`);
  } else {
      console.log(`Неверно`);
@@ -37,7 +37,7 @@ let b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
 alert(+a + +b);
 
-let monthNumber = String(prompt(`номер месяца`));
+let monthNumber = String(prompt(`Введите номер месяца`));
 
 switch (monthNumber) {
 
