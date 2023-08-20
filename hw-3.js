@@ -1,43 +1,43 @@
-// // Задание №1
-// let password = `Пароль`;
+// Задание №1
+let password = `Пароль`;
 
-// let passwordInput = prompt(`Введите Ваш пароль`);
+let passwordInput = prompt(`Введите Ваш пароль`);
 
-// if (passwordInput == password) {
-//      console.log(`Пароль введен верно`);
-//  } else {
-//      console.log(`Пароль введен неправильно`);
-//  }
+if (passwordInput == password) {
+     console.log(`Пароль введен верно`);
+ } else {
+     console.log(`Пароль введен неправильно`);
+ }
 
-// // Задание №2
+// Задание №2
 
-// // let c = Number(prompt(`Введите любое число`));
+let c = Number(prompt(`Введите любое число`));
 
-// // if (c > 0 && c <10) {
-// //      console.log(`Верно`);
-// //  } else {
-// //      console.log(`Неверно`);
-// //  };
+if (c > 0 && c <10) {
+     console.log(`Верно`);
+  } else {
+      console.log(`Неверно`);
+  };
 
-//  // Задание №3
+ // Задание №3
 
-// let d = Number(prompt(`Введите первое число`));
-// let c = Number(prompt(`Введите второе число`));
+let d = Number(prompt(`Введите первое число`));
+let e = Number(prompt(`Введите второе число`));
 
-//  if (d > 100 || c > 100) {
-//      console.log(`Верно`);
-//  } else {
-//      console.log(`Неверно`);
-//  };
+ if (d > 100 || e > 100) {
+     console.log(`Верно`);
+ } else {
+     console.log(`Неверно`);
+ };
 
-// // Задание №4
+// Задание №4
 
-// let a = '2';
-// let b = '3';
-// // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-// alert(+a + +b);
+let a = '2';
+let b = '3';
+// Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
+alert(+a + +b);
 
-let monthNumber = String(prompt(`номер месяца`));
+let monthNumber = String(prompt(`Введите номер месяца`));
 
 switch (monthNumber) {
 
