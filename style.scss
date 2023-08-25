@@ -82,6 +82,8 @@ justify-content: space-between;
 
 .games__game:hover {
     transform: scale(1.1);
+    border: 3px solid #44D2FF;
+
 }
 
 .games__game_1 {
@@ -144,6 +146,11 @@ align-items: flex-start;
 gap: 32px;
     }
 
+    &__play_questions {
+        display: flex;
+        align-items: center;
+    }
+
 &__box_rev {
     display: flex;
     flex-direction: row-reverse;
@@ -152,10 +159,19 @@ gap: 32px;
     &__title {
 color: #FFF;
 font-family: Montserrat;
-font-size: 48p;
+font-size: 48px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+}
+
+&__title_questions {
+    display: flex;
+    justify-content: center;
+}
+
+&__title-box_questions {
+    width: 1200px;
 }
 
     &__play-text {
@@ -167,6 +183,10 @@ font-weight: 300;
 line-height: 32px; /* 177.778% */
 width: 584px;
     }
+&__play-text_questions {
+    width: 1200px;
+    text-align: center;
+}
 
     &__button {
 width: 234.063px;
@@ -177,7 +197,8 @@ transition: all 0.3s;
     }
 
     &__button:hover {
-        transform: scale(1.2)
+    transform: scale(1.1);
+    background: #EB443F;
     }
 }
 

@@ -46,7 +46,26 @@
                 </div>
                 <p class="seasons__play-text">Нажмите кнопку играть, введите номер месяца (от 1 до 12)
                      и вы узнаете к какому времени года он относится</p>
-                     <div class="seasons__button-box"><button class="seasons__button">Играть!</button></div>
+                     <div class="seasons__button-box"><button class="seasons__button" onclick="function seasonsGame() {
+                        let monthNum = Number(prompt(`Введите номер месяца`));
+                        if (monthNum === 1 || monthNum === 2 || monthNum === 12) {
+                           return `Зима!`;
+                           
+                        } else if (monthNum >=3 && monthNum <=5) {
+                           return `Весна!`;
+                       
+                        } else if (monthNum >=6 && monthNum <=8) {
+                           return `Лето!`;
+                       
+                        } else if (monthNum >=9 && monthNum<=11) {
+                           return `Осень!`;
+                       
+                        } else {
+                           return `Неправильный номер месяца!`;
+                        }
+                       
+                       }
+                       alert(seasonsGame());">Играть!</button></div>
             </div>
             <div class="seasons__pics">
                 <div><svg class="seasons__svg seasons__svg_reverse" width="485" height="334" viewBox="0 0 485 334" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -250,6 +269,15 @@
                     
                 </div>
                     
+            </div>
+        </div>
+        <div class="seasons__box">
+            <div class="seasons__play seasons__play_questions">
+                <div class="seasons__title-box seasons__title-box_questions">
+                    <h1 class="seasons__title seasons__title_questions">Игра в загадки</h1>
+                </div>
+                <p class="seasons__play-text seasons__play-text_questions">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+                     <div class="seasons__button-box"><button class="seasons__button">Играть!</button></div>
             </div>
         </div>
     </div>

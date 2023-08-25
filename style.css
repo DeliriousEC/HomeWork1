@@ -82,6 +82,7 @@
 
 .games__game:hover {
   transform: scale(1.1);
+  border: 3px solid #44D2FF;
 }
 
 .games__game_1 {
@@ -142,6 +143,10 @@
   align-items: flex-start;
   gap: 32px;
 }
+.seasons__play_questions {
+  display: flex;
+  align-items: center;
+}
 .seasons__box_rev {
   display: flex;
   flex-direction: row-reverse;
@@ -149,10 +154,17 @@
 .seasons__title {
   color: #FFF;
   font-family: Montserrat;
-  font-size: 48p;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.seasons__title_questions {
+  display: flex;
+  justify-content: center;
+}
+.seasons__title-box_questions {
+  width: 1200px;
 }
 .seasons__play-text {
   color: #FFF;
@@ -163,6 +175,10 @@
   line-height: 32px; /* 177.778% */
   width: 584px;
 }
+.seasons__play-text_questions {
+  width: 1200px;
+  text-align: center;
+}
 .seasons__button {
   width: 234.063px;
   height: 48.603px;
@@ -171,7 +187,8 @@
   transition: all 0.3s;
 }
 .seasons__button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  background: #EB443F;
 }
 
 @media (max-width: 767px) {

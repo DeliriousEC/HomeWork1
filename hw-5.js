@@ -33,13 +33,11 @@ function square(n) {
 }
 
 square(6);
-square(12);
 
 function squareRoot(t) {
     console.log(`Корень из числа равен = ${t**(1/2)}`);
 }
 
-squareRoot(36);
 squareRoot(49);
 
 // Задание №4
@@ -77,9 +75,9 @@ function secondCorrect() {
     let num = prompt(`Введите число n`);
 
     if (Number(num)) {
-        return `n в кубе равно ${num**2}`;
+        return `n в кубе равно ${num**3}`;
     } else if (isNaN (num)) {
-        return `Переанный параметр не является числом`;
+        return `Переданный параметр не является числом`;
     }
 }
 
