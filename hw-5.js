@@ -5,7 +5,7 @@ function showNumber(a, b) {
         return b;
     }
 
-    if (a = b) {
+    else {
         return a;
     }
 }
@@ -17,7 +17,9 @@ console.log(showNumber(6, 6));
 
 function numParity() {
 
-    if (Number(prompt(`Введите число`)) % 2 == 0) {
+   let myNum = (Number(prompt(`Введите число`)));
+    
+    if (myNum % 2 === 0) {
         return `Число чётное`;
     } else {
         return `Не чётное`;
@@ -29,32 +31,38 @@ console.log(numParity());
 // Задание №3
 
 function square(n) {
-    console.log(`Квадрат числа равен = ${n**2}`);
+
+    n**2;
+    return n**2;
 }
 
-square(6);
-
-function squareRoot(t) {
-    console.log(`Корень из числа равен = ${t**(1/2)}`);
+function squareRoot(n) {
+    return n**2 ;
 }
+s = square(6);
 
-squareRoot(49);
+console.log(`Квадрат 6 = ${s}`);
 
 // Задание №4
 
-function yearsOld(age) {
+function yearsOld() {
+    
+    let age = prompt(`Введите свой возраст`);
 
-    if (age <= 0) {
+    if (age < 0 || isNaN(age)) {
+
         console.log(`Вы ввели неправильное значение`);
-    } else if (age >0 && age <=12) {
+    } else if (age >=0 && age <=12) {
+
         console.log(`Привет, друг!`);
     }
+
     else {
-        console.log(`Доброе пожаловать!`);
+        console.log(`Добро пожаловать!`);
     }
 }
 
-yearsOld(prompt(`Введите свой возраст`));
+yearsOld();
 
 // Задание №5
 
@@ -74,10 +82,10 @@ console.log(correctNumbers(10, 2));
 function secondCorrect() {
     let num = prompt(`Введите число n`);
 
-    if (Number(num)) {
-        return `n в кубе равно ${num**3}`;
-    } else if (isNaN (num)) {
+    if (isNaN(num)) {
         return `Переданный параметр не является числом`;
+    } else {
+        return `n в кубе равно ${num**3}`;
     }
 }
 
@@ -86,11 +94,11 @@ console.log(secondCorrect());
 // Задание №7
 
 function getCircleArea() {
-    return `${3.14*this.radius**2}`;
+    return `${Math.PI*this.radius**2}`;
 }
 
 function gerCirclePerimeter() {
-    return `${2*3.14*this.radius}`;
+    return `${Math.PI*this.radius}`;
 }
 
 const circle1 = {
@@ -109,3 +117,28 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+
+
+// Запуск по кнопке
+
+function seasonsGame() {
+
+    let monthNum = Number(prompt(`Введите номер месяца`));
+
+    if (monthNum === 1 || monthNum === 2 || monthNum === 12) {
+       return alert(`Зима!`);
+       
+    } else if (monthNum >=3 && monthNum <=5) {
+       return alert(`Весна!`);
+   
+    } else if (monthNum >=6 && monthNum <=8) {
+       return alert(`Лето!`);
+   
+    } else if (monthNum >=9 && monthNum<=11) {
+       return alert(`Осень!`);
+   
+    } else {
+       return alert(`Неправильный номер месяца!`);
+    }
+   
+   }
