@@ -30,12 +30,16 @@ console.log(numParity());
 
 // Задание №3
 
-function square(a) {
-let squareNumber = a**2;
-console.log(squareNumber);
-return `${Math.sqrt(squareNumber)}`;
+function square(a){
+
+    console.log(a**2);
 }
-console.log(square(4));
+
+    function squareReturn() {
+        return `${a**2}`
+    }
+
+square(4);
 
 // Задание №4
 
@@ -89,12 +93,12 @@ console.log(secondCorrect());
 
 function getCircleArea() {
     let area = (Math.PI*this.radius**2);
-    return `${area}`;
+    return Math.PI*this.radius**2;
 }
 
 function gerCirclePerimeter() {
     let perimeter = (Math.PI*this.radius);
-    return `${perimeter}`;
+    return Math.PI*this.radius;
 }
 
 const circle1 = {
